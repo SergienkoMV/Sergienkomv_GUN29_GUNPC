@@ -1,0 +1,14 @@
+C:\Users\SMV\source\repos\Homewark_Classs\Homewark_Classs\bin\Debug\net6.0\Homewark_Classs.exe
+C:\Users\SMV\source\repos\Homewark_Classs\Homewark_Classs\bin\Debug\net6.0\Homewark_Classs.deps.json
+C:\Users\SMV\source\repos\Homewark_Classs\Homewark_Classs\bin\Debug\net6.0\Homewark_Classs.runtimeconfig.json
+C:\Users\SMV\source\repos\Homewark_Classs\Homewark_Classs\bin\Debug\net6.0\Homewark_Classs.dll
+C:\Users\SMV\source\repos\Homewark_Classs\Homewark_Classs\bin\Debug\net6.0\Homewark_Classs.pdb
+C:\Users\SMV\source\repos\Homewark_Classs\Homewark_Classs\obj\Debug\net6.0\Homewark_Classs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SMV\source\repos\Homewark_Classs\Homewark_Classs\obj\Debug\net6.0\Homewark_Classs.AssemblyInfoInputs.cache
+C:\Users\SMV\source\repos\Homewark_Classs\Homewark_Classs\obj\Debug\net6.0\Homewark_Classs.AssemblyInfo.cs
+C:\Users\SMV\source\repos\Homewark_Classs\Homewark_Classs\obj\Debug\net6.0\Homewark_Classs.csproj.CoreCompileInputs.cache
+C:\Users\SMV\source\repos\Homewark_Classs\Homewark_Classs\obj\Debug\net6.0\Homewark_Classs.dll
+C:\Users\SMV\source\repos\Homewark_Classs\Homewark_Classs\obj\Debug\net6.0\refint\Homewark_Classs.dll
+C:\Users\SMV\source\repos\Homewark_Classs\Homewark_Classs\obj\Debug\net6.0\Homewark_Classs.pdb
+C:\Users\SMV\source\repos\Homewark_Classs\Homewark_Classs\obj\Debug\net6.0\Homewark_Classs.genruntimeconfig.cache
+C:\Users\SMV\source\repos\Homewark_Classs\Homewark_Classs\obj\Debug\net6.0\ref\Homewark_Classs.dll

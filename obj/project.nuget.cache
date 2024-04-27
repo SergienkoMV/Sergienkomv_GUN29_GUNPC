@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "NdCKpeIa7sDnAzkAfKCQLV1DON//ERuiZkamcI/58Q3ahtIpTJ1fWGULHXOpRkfEPoNablf6Ht+KeufUzs4EDg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\SMV\\source\\repos\\Homewark_Classs\\Homewark_Classs\\Homewark_Classs.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SMV\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\SMV\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\SMV\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\SMV\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.28\\microsoft.netcore.app.host.win-x64.6.0.28.nupkg.sha512"
+  ],
+  "logs": []
+}
