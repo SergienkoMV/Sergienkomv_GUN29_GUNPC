@@ -14,6 +14,37 @@
             Boots boots = new Boots();
             Weapon weapon;
 
+            //Lesson memory
+            //2.	В методе Main создаются два бойца.
+            //Имя и характеристики произвольны (значения здоровья не должно превышать 100,
+            //как и значение урона не должно превышать 30).
+            Unit warrior1 = new Unit("Subzero", 100);
+            Unit warrior2 = new Unit("Raiden", 100);
+            Console.WriteLine("Two warriors was created: " + warrior1.Name + " и " + warrior2.Name);
+            Console.WriteLine(warrior1.Name + " has health: " + warrior1.Health);
+            Console.WriteLine(warrior2.Name + " hes health: " + warrior2.Health);
+            Weapon weapon1 = new Weapon("Sward", 10, 30);
+            warrior1.EquipWeapon(weapon1);
+            Weapon weapon2 = new Weapon("Sward", 15, 25);
+            warrior2.EquipWeapon(weapon2);
+            Console.WriteLine(warrior1.Name + " has weapon with damage: " + warrior1.Damage);
+            Console.WriteLine(warrior2.Name + " has weapon with damage: " + warrior2.Damage);
+
+            Console.WriteLine("нажмите Enter для продолжения");
+            Console.ReadLine();
+
+            Combat newCombat = new Combat();
+            //5.	Вызывается метод StartCombat. Перед вызовом метода в консоли выводится сообщение о начале поединка
+            Console.WriteLine("Start Combat");
+            newCombat.StartCombat(warrior1, warrior2);
+
+            //6.Вызывается метод ShowResults. Перед вызовом метода в консоли выводится сообщение о завершении боя.
+            Console.WriteLine("Finish Combat");
+            newCombat.ShowResults();
+
+            Console.WriteLine("нажмите Enter для продолжения");
+            Console.ReadLine();
+
             //1. При запуске программы выводится сообщение “Подготовка к бою:”;
             Console.WriteLine("Preparation for battle");
 
@@ -141,6 +172,7 @@
             Console.WriteLine("Common value of armor = " + warrior.Armor);
             Console.WriteLine("Weapon name = " + weapon.Name);
             Console.WriteLine("Weapon Damage = " + warrior.Damage);
+            Console.WriteLine("RealHealth = " + warrior.RealHealth());
 
             //11. В консоль выводится сообщение “Фактическое значение здоровья равно: “.
             //Далее выводится значение свойства RealHealth;

@@ -12,3 +12,4 @@ C:\Users\SMV\source\repos\Homewark_Classs\Homewark_Classs\obj\Debug\net6.0\refin
 C:\Users\SMV\source\repos\Homewark_Classs\Homewark_Classs\obj\Debug\net6.0\Homewark_Classs.pdb
 C:\Users\SMV\source\repos\Homewark_Classs\Homewark_Classs\obj\Debug\net6.0\Homewark_Classs.genruntimeconfig.cache
 C:\Users\SMV\source\repos\Homewark_Classs\Homewark_Classs\obj\Debug\net6.0\ref\Homewark_Classs.dll
+C:\Users\SMV\source\repos\Homewark_Classs\Homewark_Classs\obj\Debug\net6.0\Homewark_Classs.sourcelink.json

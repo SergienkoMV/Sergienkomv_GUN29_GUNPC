@@ -13,6 +13,18 @@
         private Shell shell;
         private Boots boots;
 
+        //public string Weapon 
+        //{
+        //    get
+        //    {
+        //        if (weapon != null)
+        //        {
+        //            return weapon;
+        //        }
+        //        return "Unnamed weapon";
+        //    }
+        //}
+
         //Свойстно для имени name: Свойство только для чтения
         public string Name { get => name; }
 
@@ -93,10 +105,23 @@
         {
             //3.2
             //int value = 1; // value - в задании не описано, чему равно.
-            float realHealth = RealHealth() - value * Armor; //value - в задании не описано, чему равно.
+            float realHealth;
+            if (Armor != 0)
+            {
+                health = RealHealth() - value * Armor; 
+                //realHealth = RealHealth() - value * Armor; //value - в задании не описано, чему равно.
+            }
+            else
+            {
+
+                health = RealHealth() - value;
+                //realHealth = RealHealth() - value;
+            }
 
             //3.1
-            if (realHealth <= 0)
+            
+            if (health <= 0)
+            //if (realHealth <= 0)
             {
                 return true;
             }

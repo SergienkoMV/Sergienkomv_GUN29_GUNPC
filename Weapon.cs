@@ -11,8 +11,14 @@
         //Properties
         public string Name { get => _name; }
         public float Damage { get => _damage; }
-        private float MinDamage { set => _minDamage = value; }
+        public float MinDamage //исправлено по замечанию с private на public
+        { 
+            get => _minDamage;
+            private set => _minDamage = value; 
+        }
         private float MaxDamage { set => _maxDamage = value; }
+        public Interval damageRange;
+
 
         //Constructor
         public Weapon()
@@ -32,48 +38,52 @@
         public Weapon(string name, float x, float y) : this(name)
         {
             //1.4 Конструктор с тремя аргументами должен вызывать в теле метод SetDamageParams;
-            SetDamageParams(x, y);
+
+            damageRange = new Interval(x, y);
+
+            //SetDamageParams(x, y);
         }
 
         //Methods
         //2
-        public void SetDamageParams(float x, float y)
-        {
-            //2.3 Внутри метода должна проверяться допустимость входных значений.
-            //Если minDamage больше maxDamage - числа меняются местами,
-            //а в консоль выводится сообщение о некорректных входных данных (с указанием имени оружия);
-            if (x > y) 
-            {
-                MinDamage = y;
-                MaxDamage = x;
-                Console.WriteLine("Incorrect incoming atributs for weapon " + Name);
-            }
-            else
-            {
-                MinDamage = x;
-                MaxDamage = y;
-            }
+        //public void SetDamageParams(float minDamage, float maxDamage) //по замечанию заменил x и y на понятные переменные.
+        //{
+        //    //2.3 Внутри метода должна проверяться допустимость входных значений.
+        //    //Если minDamage больше maxDamage - числа меняются местами,
+        //    //а в консоль выводится сообщение о некорректных входных данных (с указанием имени оружия);
+        //    if (minDamage > maxDamage) 
+        //    {
+        //        MinDamage = maxDamage;
+        //        MaxDamage = minDamage;
+        //        Console.WriteLine("Incorrect incoming atributs for weapon " + Name);
+        //    }
+        //    else
+        //    {
+        //        MinDamage = minDamage;
+        //        MaxDamage = maxDamage;
+        //    }
 
-            //2.4 Если minDamage меньше 1f, минимальный урон оружия задается значением 1f,
-            //а в консоль выводится сообщение о форсированной установки минимального значения;
-            if (_minDamage < 1f)
-            {
-                MinDamage = 1f;
-                Console.WriteLine("Minimal damage les then 1. It setuped to 1");
-            }
+        //    //2.4 Если minDamage меньше 1f, минимальный урон оружия задается значением 1f,
+        //    //а в консоль выводится сообщение о форсированной установки минимального значения;
+        //    if (_minDamage < 1f)
+        //    {
+        //        MinDamage = 1f;
+        //        Console.WriteLine("Minimal damage les then 1. It setuped to 1");
+        //    }
 
-            //2.5 Если maxDamage меньше или равен 1f, то устанавливаем значение 10f;
-            if (_maxDamage < 1f)
-            {
-                MaxDamage = 10f;
-            }
-        }
+        //    //2.5 Если maxDamage меньше или равен 1f, то устанавливаем значение 10f;
+        //    if (_maxDamage < 1f)
+        //    {
+        //        MaxDamage = 10f;
+        //    }
+        //}
 
         //3. Вернуть урон (GetDamage):
         public float GetDamage()
         {
             //3.2 Возвращает число типа float, рассчитываемое, как среднее арифметическое между MinDamage и MaxDamage;
-            _damage = (_minDamage + _maxDamage) / 2;
+            _damage = damageRange.Avarage;
+            //_damage = (_minDamage + _maxDamage) / 2;
             return _damage;
         }
     }  
